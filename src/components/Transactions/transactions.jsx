@@ -24,3 +24,13 @@ function Transactions({ items }) {
   );
 }
 export default Transactions;
+Transactions.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      currency: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+};
