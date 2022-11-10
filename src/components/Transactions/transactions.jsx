@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from '../Transactions/transactions.module.css';
 
-function Transactions({ items }) {
+export default function Transactions({ items }) {
   return (
     <table className={css.transactionsTable}>
       <thead>
@@ -23,8 +23,6 @@ function Transactions({ items }) {
     </table>
   );
 }
-
-export default Transactions;
 
 Transactions.propTypes = {
   items: PropTypes.arrayOf(

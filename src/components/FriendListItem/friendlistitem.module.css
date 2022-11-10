@@ -1,0 +1,32 @@
+.item {
+  padding: 30px;
+  display: flex;
+  background-color: #ffdab9;
+  border: 1px solid black;
+}
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.friendOnline {
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  margin-right: 20px;
+}
+.friendOffline {
+  border: 2px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  margin-right: 20px;
+}
+.avatar {
+  margin-right: 15px;
+}
+.name {
+  font-weight: bold;
+}
